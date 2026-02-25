@@ -1,0 +1,8 @@
+public class Main{
+    public static void main(String[] args) {
+        System.out.println("Meu nome é: Paulo Murilo Rodrigues da Silva");
+        System.out.println("Meu RA é: 64664882882");
+        System.out.println("Meu curso é: Analise e desenvolvimento de sistemas");
+
+    }
+}
