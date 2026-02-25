@@ -1,0 +1,7 @@
+public class Main{
+    public static void main(String[] args) {
+        System.out.println("Minha idade é: "+ 21);
+        System.out.println("Minha altura é: "+ 1.86);
+        System.out.println("Meu status na aula é: " + "Presente");
+    }
+}
