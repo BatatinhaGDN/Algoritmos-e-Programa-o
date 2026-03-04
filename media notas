@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+    Scanner sc = new Scanner(System.in);
+
+    float nota1;
+    float nota2;
+    float nota3;
+    float nf;
+    String n;
+
+    System.out.println("Qual o nome do estudante? ");
+    n = sc.nextLine();
+    System.out.println("Digite a primeira nota:");
+    nota1 = sc.nextFloat();
+
+    System.out.println("Digite a segunda nota:");
+    nota2 = sc.nextFloat();
+
+    System.out.println("Digite a terceira nota:");
+    nota3 = sc.nextFloat();
+
+    nf = (nota2 + nota1 + nota3) / 3;
+        System.out.printf("A nota final de %s foi %.1f: ", n, nf);
+
+        if (nf >= 6) {
+            System.out.printf("O estudante %s foi aprovado. Parabéns! ", n);
+        }
+        else if (nf <=5) {
+            System.out.printf("O estudando %s foi reprovado. Sinto muito!", n);
+        }
+    sc.close();
+    }
+}
