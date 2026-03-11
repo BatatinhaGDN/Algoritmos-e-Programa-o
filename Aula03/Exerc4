@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        float n1, n2;
+        System.out.println("Digite um número: ");
+        n1 = sc.nextFloat();
+
+        System.out.println("Digite outro número: ");
+        n2 = sc.nextFloat();
+
+        if (n1 > n2){
+            System.out.printf("Ordem crescente: %.2f, %.2f", n2, n1);
+        }
+        else if(n2 > n1){
+            System.out.printf("Ordem crescente: %.2f, %.2f", n1, n2);
+        }
+    }
+}
