@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    static void main() {
+        Scanner sc = new Scanner(System.in);
+        int inteiro;
+
+        System.out.println("Informe um número inteiro: ");
+        inteiro = sc.nextInt();
+
+        if (inteiro >= 50 && inteiro <= 100)
+        {
+
+            System.out.println("Pertence ao intervalo");
+        }
+       else
+       {
+            System.out.println("Não pertence ao intervalo.");
+        }
+        sc.close();
+    }
+}
