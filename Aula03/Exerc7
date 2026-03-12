@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+    static void main() {
+        Scanner sc = new Scanner(System.in);
+        int anos;
+        double sala, sala2;
+
+        System.out.println("Quantos anos você está na empresa?");
+        anos = sc.nextInt();
+        System.out.println("Qual o seu salário? ");
+        sala = sc.nextFloat();
+
+        if (anos >= 5)
+        {
+            sala2 =sala * ((double) 20 /100);
+            System.out.println("Seu aumento foi de 20% e seu bonus é: R$ "+sala2);
+        }
+       else if (anos <= 4){
+            sala2 =sala * ((double) 10 /100);
+            System.out.println("Seu aumento foi de 10% e seu bonus é: R$ "+sala2);
+        }
+        sc.close();
+    }
+}
