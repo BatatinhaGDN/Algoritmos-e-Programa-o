@@ -5,9 +5,9 @@ public class Main {
     System.out.println("Qual período você estuda?\n---------\nM para Matutino\nV para Vespertino\nN para notruno\n---------");
     Scanner sc = new Scanner(System.in);
 
-    String num = sc.nextLine();
+    String period = sc.nextLine();
 
-    switch(num){
+    switch(period){
       case "M", "m":
         System.out.println("Bom dia");
         break;
