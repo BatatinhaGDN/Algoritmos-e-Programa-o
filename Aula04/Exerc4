@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Main {
+  static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+
+    System.out.println("Qual seu plano de trabalho?\n---------\nA\nB\nC\n---------\n");
+    String plan = sc.nextLine();
+
+    System.out.println("Qual o seu salário?");
+    double pay = sc.nextDouble();
+
+    double n_pay = 0;
+
+    switch(plan){
+      case "A", "a":
+        System.out.println("O aumento do seu salário foi de 10%");
+        n_pay = pay + (pay * (10.0 / 100));
+        System.out.printf("Seu novo salário será: %.2f", n_pay);
+        break;
+      case "B", "b":
+        System.out.println("O aumento no seu salário foi de 20%");
+        n_pay = pay + (pay * (20.0 / 100));
+        System.out.printf("Seu novo salário será: %.2f", n_pay);
+        break;
+      case "C","c":
+        System.out.println("O aumento no seu salário foi de 30%");
+        n_pay = pay + (pay * (30.0 / 100));
+        System.out.printf("Seu novo salário será: %.2f", n_pay);
+        break;
+      default:
+        System.out.println("Você escolheu um valor inválido");
+    }
+  }
+}
