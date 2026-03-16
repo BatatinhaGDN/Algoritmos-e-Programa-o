@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+    static void main(String[] args) {
+        System.out.println("Cardapio\n\nCódigo           Produto                 Preço\n" +
+                "100           Cachorro Quente           R$ 1,20\n" +
+                "101           Bauru Simples             R$ 1,30\n" +
+                "102           Bauru com ovo             R$ 1,50\n" +
+                "103           Hambúrguer                R$ 1,20\n" +
+                "104           Cheeseburguer             R$ 1,30\n" +
+                "105           Refrigerante              R$ 1,00\n");
+        Scanner sc = new Scanner(System.in);
+
+        List<String> item = new ArrayList<>();
+        //vai armazenar o nome dos itens
+        List<Double> compra = new ArrayList<>();
+        //arnazena o valor dos itens
+
+        String cod = sc.nextLine();
+        switch (cod){
+            case "100":
+                item.add("Cachorro Quente");
+                compra.add(//tem que dar um jeito de colocar o 1,20 aqui mas ele fica localizando local no indice
+
+        }
+
+
+
+    }
+}
