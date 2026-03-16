@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+  static void main(String[] args) {
+    System.out.println("Qual período você estuda?\n---------\nM para Matutino\nV para Vespertino\nN para notruno\n---------");
+    Scanner sc = new Scanner(System.in);
+
+    String num = sc.nextLine();
+
+    switch(num){
+      case "M", "m":
+        System.out.println("Bom dia");
+        break;
+      case "V", "v":
+        System.out.println("Boa tarde");
+        break;
+      case "N","n":
+        System.out.println("Boa noite");
+        break;
+      default:
+        System.out.println("Você escolheu um valor inválido");
+    }
+  }
+}
