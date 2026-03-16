@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class Main {
+  static void main(String[] args) {
+    System.out.println("Qual operação deseja realizar?" +
+            "\n--------------------------------------\n" +
+            "M para média entre os números\n" +
+            "S diferença do maior pelo menor\n" +
+            "P para produto entre os números\n" +
+            "D divisão do primeiro pelo segundo\n" +
+            "--------------------------------------\n");
+    Scanner sc = new Scanner(System.in);
+
+    String op = sc.nextLine();
+    System.out.println("Digite um valor: ");
+    double a = sc.nextDouble();
+    System.out.println("Digite mais um valor: ");
+    double b = sc.nextDouble();
+
+    switch(op){
+      case "M", "m":
+        double media = (a + b) / 2;
+        System.out.printf("A média entre os valores é: %.2f",media);
+        break;
+      case "S", "s":
+          double dif;
+          if (a > b) {
+              dif = (int) (a - b);
+          }
+        else {
+              dif = (int) (b - a);
+          }
+          System.out.printf("A diferença entre os valores é de: %.0f", dif);
+          break;
+      case "P","p":
+        int prod = (int) (a * b);
+        System.out.printf("O produto dos valores é: %d",prod);
+        break;
+      case "D", "d":
+        int div;
+        if (a > b){
+          div =(int) (a / b);
+        }
+        else {
+          div = (int) (b / a);
+        }
+        System.out.printf("A divisão entre os valores é: %d",div);
+        break;
+      default:
+        System.out.println("Você escolheu um valor inválido");
+    }
+  }
+}
