@@ -1,33 +1,60 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ArrayList;
 import java.util.Scanner;
-
 public class Main {
-    static void main(String[] args) {
-        System.out.println("Cardapio\n\nCódigo           Produto                 Preço\n" +
-                "100           Cachorro Quente           R$ 1,20\n" +
-                "101           Bauru Simples             R$ 1,30\n" +
-                "102           Bauru com ovo             R$ 1,50\n" +
-                "103           Hambúrguer                R$ 1,20\n" +
-                "104           Cheeseburguer             R$ 1,30\n" +
-                "105           Refrigerante              R$ 1,00\n");
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        List<String> item = new ArrayList<>();
-        //vai armazenar o nome dos itens
-        List<Double> compra = new ArrayList<>();
-        //arnazena o valor dos itens
+        System.out.println("-------------CARDAPIO-----------");
+        System.out.println(" 100 - CACHORRO QUENTE R$ 1,20 ");
+        System.out.println(" 101 - BAURU SIMPLES R$ 1,30 ");
+        System.out.println(" 102 - BAURU COM OVO R$ 1,50 ");
+        System.out.println(" 103 - HAMBURGUER R$ 1,20");
+        System.out.println(" 104 - CHEESEBURGER R$ 1,30 ");
+        System.out.println(" 105 - REFRIGERANTE R$ 1,00 ");
+        System.out.println(" OPÇÃO ");
 
-        String cod = sc.nextLine();
-        switch (cod){
-            case "100":
-                item.add("Cachorro Quente");
-                compra.add(//tem que dar um jeito de colocar o 1,20 aqui mas ele fica localizando local no indice
+        int opcao = sc.nextInt();
 
+        if ((opcao >= 100 && opcao <= 105)) {
+            System.out.println(" Informe a Quantidade ");
+            int qnt = sc.nextInt();
+
+            switch (opcao) {
+                case 100:
+                    System.out.println(" CACHORRO QUENTE");
+                    double valor = qnt * 1.20;
+                    System.out.printf("o valor final é R$%.2f", valor);
+                    break;
+                case 101:
+                    System.out.println(" BAURU SIMPLES ");
+                    valor = qnt * 1.30;
+                    System.out.printf("o valor final é R$%.2f", valor);
+                    break;
+                case 102:
+                    System.out.println(" BAURU COM OVO ");
+                    valor = qnt * 1.50;
+                    System.out.printf("o valor final é R$%.2f", valor);
+                    break;
+                case 103:
+                    System.out.println(" HAMBURGUER ");
+                    valor = qnt * 1.20;
+                    System.out.printf("o valor final é R$%.2f", valor);
+                    break;
+                case 104:
+                    System.out.println(" CHEESEBURGER ");
+                    valor = qnt * 1.30;
+                    System.out.printf("o valor final é R$%.2f", valor);
+                    break;
+                case 105:
+                    System.out.println(" REFRIGERANTE ");
+                    valor = qnt * 1.00;
+                    System.out.printf("o valor final é R$%.2f", valor);
+                    break;
+                default:
+                    System.out.println(" NENHUMA DAS OPCOES ");
+            }
+        } else {
+            System.out.println("Você escolheu um valor inválido");
         }
-
-
-
+        sc.close();
     }
 }
