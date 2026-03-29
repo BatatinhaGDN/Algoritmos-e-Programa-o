@@ -1,0 +1,25 @@
+//PAULO MURILO RODRIGUES DA SILVA
+
+void main() {
+    int alt, idade, cont;
+    int media_alt = 0, media, cont_50 = 0;
+
+    Scanner input = new Scanner(System.in);
+
+
+    for (cont = 1; cont <= 3; cont++) {
+
+        System.out.println("Digite sua altura em centímetros: ");
+        alt = input.nextInt();
+        System.out.println("Digite sua idade: ");
+        idade = input.nextInt();
+
+        if (idade >= 50) {
+            cont_50 = cont_50 + 1;
+            media_alt += alt;
+        }
+    }
+    media = media_alt / cont_50;
+    System.out.printf("Media da altura de pessoas maiores que 50 anos: %d cm ", media);
+
+}
