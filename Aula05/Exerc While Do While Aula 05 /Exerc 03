@@ -1,0 +1,14 @@
+//PAULO MURILO RODRIGUES DA SILVA
+
+void main() {
+    int contador = 1, num;
+
+    Scanner input = new Scanner(System.in);
+    System.out.println("Digite um número: ");
+    num = input.nextInt();
+    while (contador <= num) {
+        contador *= 2;
+        System.out.println(contador);
+
+    }
+}
