@@ -1,0 +1,36 @@
+void main() {
+    float nota1, nota2;
+    int cont, total_alunos = 3, cont_repr = 0, cont_aprov = 0, cont_exame = 0;
+    float media, soma_medias = 0, media_alunos;
+
+
+    Scanner entrada = new Scanner(System.in);
+
+    for (cont = 1; cont <= total_alunos; cont++) {
+        System.out.println("Digite duas notas: ");
+        nota1 = entrada.nextInt();
+        nota2 = entrada.nextInt();
+        media = (nota1 + nota2) / 2;
+        System.out.printf("Media: %.2f%n", media);
+
+        soma_medias += media;
+
+        if (media >= 7) {
+            System.out.println("Aprovado");
+            cont_aprov +=1;
+
+        } else if (media >= 3) {
+            System.out.println("Exame");
+            cont_exame +=1;
+        }
+        else {
+            System.out.println("Reprovado");
+            cont_repr +=1;
+        }
+    }
+    media_alunos = soma_medias / total_alunos;
+    System.out.printf("Alunos reprovados: %d\n",cont_repr);
+    System.out.printf("Alunos aprovados: %d\n", cont_aprov);
+    System.out.printf("Alunos de exame: %d\n",cont_exame);
+    System.out.printf("Média dos alunos: %.1f\n",media_alunos);
+}
