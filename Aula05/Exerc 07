@@ -1,0 +1,42 @@
+//PAULO MURILO RODRIGUES DA SILVA
+
+void main() {
+    int cont, cont_max = 2, idade, idade_50 = 0, altura, soma_altura = 0, peso_40 = 0
+            , qnt_10_20 = 0;
+    double peso_perc, peso, media_altura;
+
+    Scanner entrada = new Scanner(System.in);
+
+    for (cont = 1; cont <= cont_max; cont++) {
+        System.out.println("Digite uma idade, altura em cm e peso: ");
+        idade = entrada.nextInt();
+        altura = entrada.nextInt();
+        peso = entrada.nextDouble();
+
+        if (idade >= 50){
+            idade_50 += 1;
+        }
+
+        if (idade >= 10 && idade <= 20){
+            soma_altura += altura;
+            qnt_10_20 += 1;
+        }
+
+        if (peso <= 40){
+            peso_40 += 1;
+        }
+
+
+    }
+
+
+    System.out.printf("Pessoas com idade maior de 50: %d\n", idade_50);
+    media_altura = (double) soma_altura / qnt_10_20;
+    if (soma_altura <= 0 || qnt_10_20 <= 0) {
+        media_altura = 0;
+
+    }
+    System.out.printf("Média das alturas de pessoas com idade entre 10 e 20 anos: %.2f\n",media_altura);
+    peso_perc = (double)peso_40 * ((double) 100 / cont_max);
+    System.out.printf("Percentual de pessoas com peso menor que 40: %.2f%%\n", peso_perc);
+}
