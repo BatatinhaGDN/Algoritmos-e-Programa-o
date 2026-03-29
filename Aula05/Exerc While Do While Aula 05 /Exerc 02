@@ -1,3 +1,5 @@
+//PAULO MURILO RODRIGUES DA SILVA
+
 void main() {
     int contador = 1, num, soma_par = 0, soma_impar = 0;
 
