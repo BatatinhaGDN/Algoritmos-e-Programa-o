@@ -1,0 +1,14 @@
+//PAULO MURILO RODRIGUES DA SILVA
+
+void main() {
+    int contador = 0;
+    int mult;
+
+    while (contador <= 10){
+        mult = contador * 5;
+        System.out.printf("%d x 5 = %d \n", contador, mult);
+        contador++;
+    }
+
+
+}
