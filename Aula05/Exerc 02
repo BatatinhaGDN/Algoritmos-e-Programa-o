@@ -1,0 +1,12 @@
+//PAULO MURILO RODRIGUES DA SILVA 
+
+void main() {
+
+    int cont;
+    int mult;
+
+    for (cont = 15; cont <= 100; cont++) {
+        mult = cont * cont;
+        System.out.printf("O quadrado do número %d é %d\n",cont, mult);
+    }
+}
