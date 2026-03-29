@@ -1,0 +1,50 @@
+
+//PAULO MURILO RODRIGUES DA SILVA
+
+void main() {
+    Scanner entrada = new Scanner(System.in);
+    int cont, total = 10, votos;
+    int vt1 = 0, vt2 = 0, vt3 = 0, vt4 = 0, vtnulo = 0, vtbranco = 0;
+    double nulo_perc, branco_perc;
+
+    for (cont = 1; cont <= total; cont++) {
+        System.out.println("Escolha um voto de 1 á 4 ou 5 para nulo e 6 para branco: ");
+        votos = entrada.nextInt();
+
+        if (votos == 1) {
+            vt1 += 1;
+        }
+        else if (votos == 2) {
+            vt2 += 1;
+        }
+        else if (votos == 3) {
+            vt3 += 1;
+        }
+        else if (votos == 4) {
+            vt4 += 1;
+        }
+        else if (votos == 5) {
+            vtnulo += 1;
+        }
+        else if (votos == 6) {
+            vtbranco += 1;
+        }
+    }
+    branco_perc = (double) vtbranco * ((double) 100 / total);
+    System.out.printf("Percentual de votos em branco: %.2f%%\n", branco_perc);
+    nulo_perc = (double) vtnulo * ((double) 100 / total);
+    System.out.printf("Percentual de votos nulos: %.2f%%\n",nulo_perc);
+
+    System.out.printf("Total de votos 1 : %d\n",vt1);
+
+    System.out.printf("Total de votos 2 : %d\n",vt2);
+    System.out.printf("Total de votos 3 : %d\n",vt3);
+    System.out.printf("Total de votos 4 : %d\n",vt4);
+    System.out.printf("Total de votos nulo : %d\n",vtnulo);
+    System.out.printf("Total de votos branco : %d\n",vtbranco);
+
+
+
+
+
+}
