@@ -1,0 +1,23 @@
+//PAULO MURILO RODRIGUES DA SILVA
+
+void main() {
+    int contador = 1, cont_imc = 0;
+    double imc;
+    double peso;
+    double altura;
+
+    Scanner input = new Scanner(System.in);
+
+    while (contador <= 10) {
+        System.out.println("Digite sua altura em cm e peso: ");
+        altura = input.nextInt();
+        peso = input.nextFloat();
+        altura = (float) (altura / 100.0);
+        imc = peso / (altura * altura);
+        if (imc < 24.9 && imc > 18.5) {
+            cont_imc += 1;
+        }
+        contador++;
+    }
+    System.out.printf("Quantidade de pessoas dentro do IMC: %d\n", cont_imc);
+}
