@@ -1,0 +1,24 @@
+//PAULO MURILO RODRIGUES DA SILVA
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Digite um número inteiro: ");
+
+        int num = entrada.nextInt();
+
+        int cont;
+
+        //print normal para os valores de For continuarem na mesma linha
+        System.out.print("Sequência: ");
+
+
+        for (cont = 1; cont <= num; cont++) {
+            System.out.print(cont + " ");
+        }
+
+    }
+}
