@@ -1,0 +1,8 @@
+//PAULO MURILO RODRIGUES DA SILVA TURMA B
+
+void main() {
+    int cont;
+    for (cont  = 100; cont >= 1; cont--) {
+        System.out.println(cont);
+    }
+}
