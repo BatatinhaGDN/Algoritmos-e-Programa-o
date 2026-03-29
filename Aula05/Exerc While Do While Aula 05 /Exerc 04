@@ -1,0 +1,14 @@
+//PAULO MURILO RODRIGUES DA SILVA
+
+void main() {
+    int contador = 10;
+    double metade;
+
+    while (contador < 20){
+        contador++;
+        metade = (double) contador / 2;
+        System.out.printf("A metade de %d é %.1f\n", contador, metade);
+
+    }
+
+}
