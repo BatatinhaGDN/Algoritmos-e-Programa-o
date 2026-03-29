@@ -1,0 +1,24 @@
+void main() {
+    int contador = 1, num, soma_par = 0, soma_impar = 0;
+
+    Scanner input = new Scanner(System.in);
+
+    while (contador <= 10){
+
+        System.out.printf("Digite o %d número: ", contador);
+        num = input.nextInt();
+
+        if  (num % 2 == 0){
+            soma_par += 1;
+        }
+        else if (num % 2 > 0){
+            soma_impar += 1;
+        }
+        else{
+            System.out.println("Digite um valor válido");
+        }
+        contador++;
+    }
+    System.out.println("Números pares: " + soma_par);
+    System.out.println("Números impares: " + soma_impar);
+}
