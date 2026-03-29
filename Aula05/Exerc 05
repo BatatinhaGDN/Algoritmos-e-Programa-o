@@ -32,5 +32,5 @@ void main() {
     System.out.printf("Alunos reprovados: %d\n",cont_repr);
     System.out.printf("Alunos aprovados: %d\n", cont_aprov);
     System.out.printf("Alunos de exame: %d\n",cont_exame);
-    System.out.printf("Média dos alunos: %.1f\n",media_alunos);
+    System.out.printf("Média da classe: %.1f\n",media_alunos);
 }
