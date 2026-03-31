@@ -1,0 +1,31 @@
+//PAULO MURILO RODRIGUES DA SILVA
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    double n1, n2, media;
+    int contador = 0;
+
+    Scanner input = new Scanner(System.in);
+
+
+    do {
+        System.out.println("Digite a primeira nota: ");
+        n1 = input.nextDouble();
+        System.out.println("Digite a segunda nota: ");
+        n2 = input.nextDouble();
+
+        if (n1 <= 10 && n1 >= 0 && n2 <= 10 && n2 >= 0) {
+            media = (n1 + n2) / 2;
+            System.out.printf("Sua média é: %.1f\n", media);
+            contador++;
+        }
+        else{
+            System.out.println("Digite uma nóta válida!\n");
+            continue;
+        }
+    } while (contador <= 3);
+
+    }
+}
