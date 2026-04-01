@@ -1,15 +1,15 @@
 //PAULO MURILO RODRIGUES DA SILVA
 
 
-import java.util.Objects;
+
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-    double preco, soma_preco = 0, c100, c101, c102,c103, c104, c105;
-    int codigo, qnt_item, qnt, contador = 0;
-    String cont;
+        double preco = 0, soma_preco = 0, qnt_item;
+        int codigo, qnt;
+        String cont;
 
-    Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         System.out.println("""
                 ---------------------------------
@@ -23,52 +23,42 @@ public class Main {
                 ---------------------------------
                 """);
         do {
-            contador++;
-            c100 = 0;
-            c101 = 0;
-            c102 = 0;
-            c103 = 0;
-            c104 = 0;
-            c105 = 0;
 
             System.out.println("Qual produto deseja comprar? Digite o código");
             codigo = input.nextInt();
             if (codigo == 100){
-                c100 = 1.20;
-                codigo = (int) 1.20;
+                preco = 1.20;
             }
             else if (codigo == 101){
-                c101 = 1.30;
-                codigo = (int) 1.30;
+                preco = 1.30;
             }
             else if (codigo == 102) {
-                c102 = 1.50;
-                codigo = (int) 1.50;
+                preco = 1.50;
             }
             else if (codigo == 103){
-                c103 = 1.20;
-                codigo = (int) 1.20;
+                preco = 1.20;
             }
             else if (codigo == 104){
-                c104 = 1.30;
-                codigo = (int) 1.30;
+                preco = 1.30;
             }
             else if (codigo == 105){
-                c105 = 1.00;
-                codigo = (int) 1.00;
+                preco = 1.00;
             }
 
             System.out.println("Qual a quantidade?");
             qnt = input.nextInt();
-            qnt_item = qnt * codigo;
+            qnt_item = (qnt * preco);
+            System.out.println(qnt_item);
             soma_preco += qnt_item;
 
 
             System.out.println("Deseja continuar comprando? Digite s ou n: ");
+            input.nextLine();
             cont = input.nextLine();
 
-        } while (contador <= 4);
 
+        } while (cont.equals("s") || cont.equals("S"));
+        System.out.printf("O valor total da nota ficou: %.2f ", soma_preco);
 
     }
 }
