@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("1º chamada:");
+        imprimeNovaMensagem("sou");
+        System.out.println("2º chamada:");
+        imprimeNovaMensagem("muito");
+        System.out.println(("3º chamada: "));
+        imprimeNovaMensagem("incrivel!");
+    }
+    public static void imprimeNovaMensagem(String mensagem){
+        System.out.println(mensagem);
+    }
+}
