@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Se liga no que eu aprendi...");
+        mensagem();
+        System.out.println("Apenas para reforçar: ");
+        mensagem();
+        System.out.println("Acho que já entendeu que...");
+        mensagem();
+    }
+    public static void mensagem(){
+        System.out.println("Meu primeiro programa com funções!");
+    }
+}
